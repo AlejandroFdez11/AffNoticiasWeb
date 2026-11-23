@@ -2,7 +2,7 @@
 
 Sitio estático de AFFutbol desplegado en **Netlify**: páginas legales, soporte y descarga del APK de distribución interna.
 
-- URL: https://affnoticiasweb.netlify.app
+- URL: https://fabulous-lokum-31a2e8.netlify.app
 - Repo: `AlejandroFdez11/AffNoticiasWeb`
 - No incluye la app Expo: esa vive en `AlejandroFdez11/AffNoticiasFutbol`.
 
