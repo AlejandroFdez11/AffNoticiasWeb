@@ -4,10 +4,10 @@ Sitio estático de AFFutbol en Netlify (`https://fabulous-lokum-31a2e8.netlify.a
 
 ## Fuente de verdad: manual vs generado
 
-- `legal/{privacidad,terminos,fuentes}/index.html` **y** `soporte/index.html` son output del repo hermano `AlejandroFdez11/AffNoticiasFutbol`. El generador reescribe el HTML completo (CSS, nav con URLs absolutas, fecha/revisión y footer), así que no edites esos archivos a mano: cambia la fuente y regenera.
+- `legal/{privacidad,terminos,fuentes}/index.html` **y** `soporte/index.html` son output del repo hermano `AlejandroFdez11/AffNoticiasFutbol`. El generador reescribe el HTML completo (layout, nav con URLs absolutas, fecha/revisión y footer), así que no edites esos archivos a mano: cambia la fuente y regenera.
   - Fuente: `AFFutbol/src/features/legal/documents.ts` (textos, `LEGAL_LAST_UPDATED`, `LEGAL_SITE_URL`, emails de contacto/soporte).
   - Desde la raíz de `AffNoticiasFutbol`, con este repo en `../AffNoticiasWeb`: `npx --yes tsx scripts/generate-legal-pages.ts`. Si está en otra ruta, `LEGAL_WEB_DIR=/ruta/AffNoticiasWeb`. Después commitea aquí.
-- `descargar/index.html` y `index.html` sí son manuales.
+- `descargar/index.html` y `index.html` sí son manuales. La landing animada vive en `descargar/index.html` + `landing.css`/`landing.js` (JS vanilla, sin dependencias; respeta `prefers-reduced-motion`). El estilo compartido de todas las páginas es `styles.css`, enlazado también desde el generador.
 - Los iconos de esta web (`favicon.svg`, `favicon.png`, `apple-touch-icon.png`) derivan de `AFFutbol/assets/brand/icon-master.svg` en el repo de la app; las etiquetas `<link rel="icon">` de las páginas generadas viven en `scripts/generate-legal-pages.ts`. Cambia allí y regenera, no en el HTML.
 
 ## Gotchas

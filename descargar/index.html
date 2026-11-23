@@ -3,66 +3,232 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Descargar AFFutbol · Android</title>
-  <meta name="description" content="Descarga el APK de AFFutbol para Android desde la distribución interna de EAS.">
+  <title>AFFutbol · Pronósticos, noticias y rankings de tu equipo</title>
+  <meta name="description" content="Partidos en directo, noticias y rumores, predicciones con puntos, ranking mundial y ligas privadas. Descarga el APK de AFFutbol para Android.">
   <meta name="theme-color" content="#0B7A4B">
+  <link rel="canonical" href="https://fabulous-lokum-31a2e8.netlify.app/descargar">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <style>
-    :root { color-scheme: light dark; }
-    body { margin: 0; background: #07120d; color: #f2f5f3; font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
-    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
-    header { border-bottom: 1px solid #0b7a4b; margin-bottom: 28px; padding-bottom: 16px; }
-    h1 { color: #fff; font-size: 2rem; margin: 0 0 6px; }
-    .eyebrow { color: #d99b32; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; }
-    .summary { color: #c8d2cc; }
-    h2 { color: #4fbf87; font-size: 1.2rem; margin-top: 32px; }
-    a { color: #6fd3a4; }
-    nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
-    ul { padding-left: 22px; }
-    li { margin: 6px 0; }
-    footer { border-top: 1px solid #0b7a4b; color: #99a69f; font-size: .85rem; margin-top: 48px; padding-top: 16px; }
-    .card { background: #0d1c14; border: 1px solid #16452d; border-radius: 14px; margin-top: 24px; padding: 24px; }
-    .download { background: #0b7a4b; border-radius: 10px; color: #fff; display: inline-block; font-weight: 700; margin: 12px 0; padding: 14px 24px; text-decoration: none; }
-    .download:hover { background: #4fbf87; color: #07120d; }
-    .meta { color: #99a69f; font-size: .9rem; }
-    .note { border-left: 3px solid #d99b32; color: #c8d2cc; margin-top: 20px; padding-left: 16px; }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/landing.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
-<body>
+<body class="landing">
+  <header class="site-header">
+    <a class="brand" href="/descargar"><img src="/favicon.svg" alt=""> AFFutbol</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#explorar">La app</a>
+      <a href="/legal/privacidad">Privacidad</a>
+      <a href="/legal/terminos">Condiciones</a>
+      <a href="/legal/fuentes">Fuentes</a>
+      <a href="/soporte">Soporte</a>
+    </nav>
+    <a class="btn btn-small" href="#descargar">Descargar APK</a>
+  </header>
+
   <main>
-    <header>
-      <div class="eyebrow">AFFutbol · distribución interna</div>
-      <h1>Descargar AFFutbol para Android</h1>
-      <nav><a href="/descargar">Descargar</a><a href="/legal/privacidad">Privacidad</a><a href="/legal/terminos">Condiciones</a><a href="/legal/fuentes">Fuentes</a><a href="/soporte">Soporte</a></nav>
-    </header>
-    <p class="summary">APK firmado de la build de producción, listo para instalar en un móvil Android sin pasar por Google Play.</p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">El fútbol, contigo.</p>
+        <h1 class="reveal">Tu equipo.<br>Tus pronósticos.<br><span>Tu liga.</span></h1>
+        <p class="hero-lead reveal">Sigue los partidos en directo, lee la actualidad de tus medios favoritos y compite con la gente que conoce. Cinco pestañas, una sola app, cero complicaciones.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-large btn-pulse" href="#descargar">Descargar APK <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-large btn-ghost" href="#explorar">Ver qué hace</a>
+        </div>
+        <ul class="hero-points reveal">
+          <li>Gratis</li>
+          <li>Sin Google Play</li>
+          <li>Notificaciones reales</li>
+        </ul>
+      </div>
 
-    <div class="card">
-      <a class="download" href="https://expo.dev/artifacts/eas/dlf6ROJ4gBSWtDklP91cSZsEuvvvXJZuitV5D4JUZFM.apk">Descargar APK de AFFutbol</a>
-      <p class="meta">Android · versión 1.0.0 (build 3) · distribución interna con EAS</p>
-      <p class="meta"><a href="https://expo.dev/accounts/aff_11/projects/affutbol/builds/ebc70f1d-b5be-4c34-a414-9f6ada2ca308">Ver build en EAS</a> · enlace válido hasta el 07/12/2026</p>
+      <div class="phone-stage" aria-label="Demo animada de la app AFFutbol">
+        <div class="phone">
+          <div class="phone-speaker" aria-hidden="true"></div>
+          <div class="phone-screen">
+            <div class="app-screen is-active" id="screen-0" data-screen="0">
+              <div class="app-topbar"><span class="app-eyebrow">AFFutbol</span><strong>Partidos</strong><span class="app-actions" aria-hidden="true">↻</span></div>
+              <div class="date-strip" aria-hidden="true"><span>mié</span><span>jue</span><span class="active">vie</span><span>sáb</span><span>dom</span></div>
+              <div class="app-section-title"><span class="live-dot" aria-hidden="true"></span> En directo <span>1 partido</span></div>
+              <div class="match-card live">
+                <div class="team"><span class="crest">ATH</span><b>Athletic</b></div>
+                <div class="score">2 <span>:</span> 1</div>
+                <div class="team"><span class="crest crest-b">RMA</span><b>Real Madrid</b></div>
+                <span class="minute">78'</span>
+              </div>
+              <div class="app-section-title">LaLiga EA Sports <span>8 partidos</span></div>
+              <div class="match-card">
+                <div class="team"><span class="crest crest-c">BAR</span><b>Barcelona</b></div>
+                <div class="score">21:00</div>
+                <div class="team"><span class="crest crest-d">ATM</span><b>Atlético</b></div>
+              </div>
+              <div class="match-card">
+                <div class="team"><span class="crest crest-e">SEV</span><b>Sevilla</b></div>
+                <div class="score">18:30</div>
+                <div class="team"><span class="crest crest-f">VAL</span><b>Valencia</b></div>
+              </div>
+            </div>
+
+            <div class="app-screen" id="screen-1" data-screen="1" aria-hidden="true">
+              <div class="app-topbar"><span class="app-eyebrow">AFFutbol</span><strong>Noticias</strong><span class="app-actions" aria-hidden="true">↻</span></div>
+              <div class="segmented" aria-hidden="true"><span class="on">Todo</span><span>Noticias</span><span>Rumores</span></div>
+              <div class="feature-article">
+                <div class="feature-art" aria-hidden="true"></div>
+                <span class="pill">Destacado</span>
+                <strong>El mercado se agita: los rumores que llegan a los grandes clubes</strong>
+                <small>Mundo Deportivo · hace 12 min</small>
+              </div>
+              <div class="app-section-title">Últimas noticias <span>6 fuentes</span></div>
+              <div class="news-row"><span class="news-thumb" aria-hidden="true"></span><div><strong>Vuelve LaLiga: calendario y horarios de la jornada</strong><small>Marca · 34 min</small></div></div>
+              <div class="news-row"><span class="news-thumb alt" aria-hidden="true"></span><div><strong>Rumor: acuerdo muy avanzado para el fichaje</strong><small>Relevo · 1 h</small></div></div>
+            </div>
+
+            <div class="app-screen" id="screen-2" data-screen="2" aria-hidden="true">
+              <div class="app-topbar"><span class="app-eyebrow">AFFutbol</span><strong>Predicciones</strong><span class="app-actions" aria-hidden="true">◎</span></div>
+              <div class="app-section-title">Próximos partidos</div>
+              <div class="prediction-card">
+                <div class="pred-teams"><span class="crest">ATH</span><b>Athletic</b><span class="vs">vs</span><b>Real Madrid</b><span class="crest crest-b">RMA</span></div>
+                <div class="score-inputs" aria-hidden="true"><span>2</span><span class="dash">-</span><span>1</span></div>
+                <div class="pred-actions"><span class="pill gold">10 · 5 · 0</span><button class="mock-btn" type="button" tabindex="-1">Guardar pronóstico</button></div>
+                <small class="rule-note">Se cierra al inicio del partido</small>
+              </div>
+              <div class="app-section-title">Cómo se puntúa</div>
+              <div class="rules">
+                <div><b>10</b><span>Marcador exacto</span></div>
+                <div><b>5</b><span>Un equipo</span></div>
+                <div><b>0</b><span>Resto</span></div>
+              </div>
+            </div>
+
+            <div class="app-screen" id="screen-3" data-screen="3" aria-hidden="true">
+              <div class="app-topbar"><span class="app-eyebrow">AFFutbol</span><strong>Ranking</strong><span class="app-actions" aria-hidden="true">◎</span></div>
+              <div class="segmented" aria-hidden="true"><span class="on">Mundial</span><span>Mis ligas</span></div>
+              <div class="rank-row"><span>1</span><span class="avatar">LM</span><b>Luis M.</b><strong>2.480</strong></div>
+              <div class="rank-row"><span>2</span><span class="avatar">CG</span><b>Carla G.</b><strong>2.310</strong></div>
+              <div class="rank-row"><span>3</span><span class="avatar">JP</span><b>Javier P.</b><strong>2.095</strong></div>
+              <div class="league-card">
+                <div><span class="pill">Liga privada</span><strong>Liga de amigos</strong><small>CÓDIGO AF7K2Q</small></div>
+                <button class="mock-btn" type="button" tabindex="-1">Compartir</button>
+              </div>
+            </div>
+
+            <div class="app-screen" id="screen-4" data-screen="4" aria-hidden="true">
+              <div class="app-topbar"><span class="app-eyebrow">AFFutbol</span><strong>Perfil</strong><span class="app-actions" aria-hidden="true">◎</span></div>
+              <div class="profile-hero"><span class="avatar big">AF</span><div><strong>¡Hola, Alejandro!</strong><small>El fútbol, contigo.</small></div></div>
+              <div class="stats-row">
+                <div><b>1.240</b><span>Puntos</span></div>
+                <div><b>28</b><span>Pronósticos</span></div>
+                <div><b>8º</b><span>Ranking</span></div>
+              </div>
+              <div class="app-section-title">Mis perfiles <span>3 de 3</span></div>
+              <div class="profiles" aria-hidden="true"><span class="avatar on">⚽</span><span class="avatar">🏆</span><span class="avatar">⭐</span><span class="avatar add">+</span></div>
+              <div class="app-section-title">Notificaciones</div>
+              <div class="toggle-row"><span>Resultados de mis pronósticos</span><span class="toggle on" aria-hidden="true"></span></div>
+              <div class="toggle-row"><span>Cambios de ranking</span><span class="toggle on" aria-hidden="true"></span></div>
+            </div>
+          </div>
+
+          <div class="phone-tabbar" role="tablist" aria-label="Pestañas de la app">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="screen-0" data-tab="0"><span class="tab-icon" aria-hidden="true">⚽</span>Partidos</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="screen-1" data-tab="1" tabindex="-1"><span class="tab-icon" aria-hidden="true">📰</span>Noticias</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="screen-2" data-tab="2" tabindex="-1"><span class="tab-icon" aria-hidden="true">🎯</span>Predicciones</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="screen-3" data-tab="3" tabindex="-1"><span class="tab-icon" aria-hidden="true">🏆</span>Ranking</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="screen-4" data-tab="4" tabindex="-1"><span class="tab-icon" aria-hidden="true">👤</span>Perfil</button>
+          </div>
+        </div>
+        <div class="float-note note-score" aria-hidden="true">En directo<small>Athletic 2 – 1 Real Madrid</small></div>
+        <div class="float-note note-points" aria-hidden="true">+10<small>¡Marcador exacto!</small></div>
+      </div>
+    </section>
+
+    <section class="section features" id="explorar">
+      <div class="container">
+        <p class="eyebrow reveal">Cinco pestañas, un solo fútbol</p>
+        <h2 class="reveal">Todo lo que vives en un partido, en una sola app</h2>
+        <p class="section-lead reveal">Toca una pestaña del móvil para verla en acción. Esto es lo que puedes hacer con AFFutbol.</p>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⚽</div>
+            <h3>Partidos y estadísticas</h3>
+            <p>Calendario de ±7 días, marcadores en directo y secciones por competición. Abre cualquier partido para ver eventos, alineaciones y estadísticas del equipo.</p>
+            <button class="feature-link" type="button" data-jump="0">Ver en la app →</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">📰</div>
+            <h3>Noticias y rumores</h3>
+            <p>Actualidad de Marca, Mundo Deportivo, Relevo, 20minutos, La Vanguardia y ESPN. Filtra entre Todo, Noticias y Rumores, y abre siempre el artículo original.</p>
+            <button class="feature-link" type="button" data-jump="1">Ver en la app →</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🎯</div>
+            <h3>Predicciones que suman</h3>
+            <p>Pronostica el marcador antes del inicio: 10 puntos por acertarlo exacto, 5 por acertar los goles de un equipo y 0 en el resto. El pronóstico se cierra al pitazo inicial.</p>
+            <button class="feature-link" type="button" data-jump="2">Ver en la app →</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">🏆</div>
+            <h3>Ranking y ligas privadas</h3>
+            <p>Compite en el ranking mundial o crea una liga privada con un código de 6 caracteres para jugar solo con tus amigos. Comparte el código y sigue la tabla en tiempo real.</p>
+            <button class="feature-link" type="button" data-jump="3">Ver en la app →</button>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">👤</div>
+            <h3>Tu perfil, tus reglas</h3>
+            <p>Hasta tres perfiles visuales con avatar, color y equipo favorito propio; los puntos siguen siendo de tu cuenta. Activa recordatorios de partido, resultados de tus pronósticos y cambios de ranking, o borra tu cuenta cuando quieras desde Perfil → Eliminar cuenta.</p>
+            <button class="feature-link" type="button" data-jump="4">Ver en la app →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers" aria-label="AFFutbol en números">
+      <div class="container">
+        <div><b data-count="5">0</b><span>pestañas</span></div>
+        <div><b data-count="3">0</b><span>perfiles por cuenta</span></div>
+        <div><b data-count="10">0</b><span>puntos por marcador exacto</span></div>
+        <div><b data-count="6">0</b><span>fuentes de noticias</span></div>
+      </div>
+    </section>
+
+    <section class="section download" id="descargar">
+      <div class="container download-card">
+        <div>
+          <p class="eyebrow">Distribución interna · Android</p>
+          <h2>Instala AFFutbol en tu móvil</h2>
+          <p>APK firmado de la build de producción, con las mismas variables que la app: partidos, noticias, estadísticas, ligas y notificaciones push reales. No hace falta Expo Go.</p>
+          <a class="btn btn-large" href="https://expo.dev/artifacts/eas/dlf6ROJ4gBSWtDklP91cSZsEuvvvXJZuitV5D4JUZFM.apk">Descargar APK de AFFutbol</a>
+          <p class="meta">Android · versión 1.0.0 (build 3) · enlace válido hasta el 07/12/2026</p>
+          <a class="text-link" href="https://expo.dev/accounts/aff_11/projects/affutbol/builds/ebc70f1d-b5be-4c34-a414-9f6ada2ca308">Ver build en EAS →</a>
+        </div>
+        <div class="install-steps">
+          <h3>Cómo instalarlo</h3>
+          <ol>
+            <li>Abre este enlace en el móvil y descarga el archivo <strong>.apk</strong>.</li>
+            <li>Cuando Android lo pida, permite instalar apps de fuentes desconocidas solo para este archivo.</li>
+            <li>Abre el APK e instala la app. Si ya estaba instalada, se actualizará sobre la anterior.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <div class="notes">
+      <p class="note">AFFutbol <strong>no está publicada en Google Play</strong>. El registro de Play Console no se ha pagado; esta página es el canal oficial de instalación para las pruebas. Expo Go no sirve para probar el push: usa este APK.</p>
+      <p class="note">Hay una cuenta de demostración ya creada para revisar la app. Sus credenciales se entregan directamente a los revisores; por seguridad no se publican en esta web.</p>
     </div>
-
-    <h2>Cómo instalarlo</h2>
-    <ol>
-      <li>Abre este enlace en el móvil y descarga el archivo <strong>.apk</strong>.</li>
-      <li>Cuando Android lo pida, permite instalar apps de fuentes desconocidas solo para este archivo.</li>
-      <li>Abre el APK e instala la app. Si ya estaba instalada, se actualizará sobre la anterior.</li>
-    </ol>
-
-    <h2>Qué incluye esta build</h2>
-    <ul>
-      <li>Las mismas variables de producción: partidos, noticias, estadísticas y notificaciones push reales.</li>
-      <li>El borrado de cuenta desde Perfil → Eliminar cuenta.</li>
-      <li>Las páginas legales accesibles desde la app y desde esta web.</li>
-    </ul>
-
-    <p class="note">AFFutbol <strong>no está publicada en Google Play</strong>. El registro de Play Console no se ha pagado; esta página es el canal oficial de instalación para las pruebas. Expo Go no sirve para probar el push: usa este APK.</p>
-    <p class="note">Hay una cuenta de demostración ya creada para revisar la app. Sus credenciales se entregan directamente a los revisores; por seguridad no se publican en esta web.</p>
-
-    <footer>Distribución interna · 23 de noviembre de 2026. Publicada en https://fabulous-lokum-31a2e8.netlify.app/descargar.</footer>
   </main>
+
+  <footer class="site-footer">
+    <span>Distribución interna · 23 de noviembre de 2026 · Publicada en https://fabulous-lokum-31a2e8.netlify.app/descargar</span>
+    <nav aria-label="Enlaces legales">
+      <a href="/legal/privacidad">Privacidad</a>
+      <a href="/legal/terminos">Condiciones</a>
+      <a href="/legal/fuentes">Fuentes</a>
+      <a href="/soporte">Soporte</a>
+    </nav>
+  </footer>
+
+  <script src="/landing.js"></script>
 </body>
 </html>
